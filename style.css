@@ -1,3 +1,7 @@
+* {
+   font-family: 'Times New Roman', Times, serif;
+}
+
 :root {
    /* Backgrounds */
    --bg-primary: #050B1A;
@@ -45,8 +49,12 @@ body {
    backdrop-filter: blur(5px);
 }
 
-h1 {
-   font-size: 22px;
+h2 {
+   color: var(--text-primary);
+   text-shadow: 0 0 10px #00BFFF;
+}
+
+h3 {
    color: var(--text-primary);
    text-shadow: 0 0 10px #00BFFF;
 }
@@ -54,7 +62,8 @@ h1 {
 #main {
    border: solid var(--bg-primary) 1px;
    width: 98%;
-   height: 90vh;
+   height: 100%;
+   min-height: 70vh;
    display: flex;
    justify-content: start;
    align-items: center;
@@ -64,7 +73,7 @@ h1 {
    flex-direction: column;
 }
 
-.input_bar {
+#input_bar {
    border: solid var(--bg-primary) 2px;
    background-color: var(--text-primary);
    color: gray;
@@ -80,8 +89,47 @@ h1 {
    cursor: text;
 } 
 
-.input_bar:hover {
+#input_bar:hover {
    scale: 1.03;
+}
+
+.search_button {
+   border: solid var(--bg-primary) 2px;
+   background-color: var(--text-primary);
+   color: var(--bg-primary);
+   padding: 10px;
+   font-size: 10px;
+   border-radius: 20px;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.search_button:hover {
+   scale: 1.03;
+   border: solid white 2px;
+   background-color: var(--bg-primary);
+   color: var(--text-primary);
+}
+
+.lista {
+   border: solid var(--border-color) 3px;
+   backdrop-filter: blur(1px);
+   min-height: 100px;
+   width: 90%;
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+}
+
+.resultado {
+   border: solid var(--border-color) 1px;
+   width: 100%;
+   height: fit-content;
+   color: white;
+   gap: 50px;
 }
 
 #footer {
@@ -97,6 +145,11 @@ h1 {
    flex-direction: column;
    padding: 10px;
    gap: 2px;
+}
+
+li {
+   color: white;
+   text-shadow: 0 0 10px #00BFFF;
 }
 
 #github {
