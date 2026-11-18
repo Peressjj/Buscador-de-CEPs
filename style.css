@@ -1,0 +1,113 @@
+:root {
+   /* Backgrounds */
+   --bg-primary: #050B1A;
+   --bg-secondary: #0A1630;
+   --bg-tertiary: #10264A;
+
+   /* Azul galáxia */
+   --blue-dark: #142F5C;
+   --blue-primary: #2456A6;
+   --blue-secondary: #3678D8;
+   --blue-light: #63A4FF;
+   --blue-neon: #00BFFF;
+
+   /* Detalhes */
+   --purple-galaxy: #5145A8;
+   --cyan: #5CE1E6;
+
+   /* Textos */
+   --text-primary: #F0F6FF;
+   --text-secondary: #A9BBD6;
+   --text-muted: #7185A5;
+
+   /* Efeitos */
+   --border-color: rgba(99, 164, 255, 0.2);
+   --shadow-blue: 0 0 20px rgba(0, 191, 255, 0.25);
+}
+
+body {
+   background-image: url(./assets/background.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+#header {
+   border: solid var(--border-color) 3px;
+   padding: 5px;
+   border-radius: 10px;
+   font-size: 25px;
+   width: 98%;
+   color: var(--text-primary);
+   display: flex;
+   justify-content: center;
+   backdrop-filter: blur(5px);
+}
+
+h1 {
+   font-size: 22px;
+   color: var(--text-primary);
+   text-shadow: 0 0 10px #00BFFF;
+}
+
+#main {
+   border: solid var(--bg-primary) 1px;
+   width: 98%;
+   height: 90vh;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   padding: 10px;
+   gap: 10px;
+   border-radius: 10px;
+   flex-direction: column;
+}
+
+.input_bar {
+   border: solid var(--bg-primary) 2px;
+   background-color: var(--text-primary);
+   color: gray;
+   font-size: 10px;
+   padding: 10px;
+   height: 3%;
+   border-radius: 20px;
+   width: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   transition: 0.3s;
+   cursor: text;
+} 
+
+.input_bar:hover {
+   scale: 1.03;
+}
+
+#footer {
+   border: solid var(--border-color);
+   width: 98%;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(5px);
+   height: fit-content;
+   color: var(--text-primary);
+   flex-direction: column;
+   padding: 10px;
+   gap: 2px;
+}
+
+#github {
+   color: var(--text-primary);
+   text-decoration: none;
+   border: solid var(--text-primary) 1px;
+   border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   margin: 0;
+   cursor: pointer;
+}
